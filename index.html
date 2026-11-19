@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Abyssal Chronicle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="content.js" defer></script>
+    <script src="scene.js" defer></script>
+    <script src="clock.js" defer></script>
+</head>
+<body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="fish" viewBox="0 0 60 30"><path d="M58 15C48 2 24 2 14 15c10 13 34 13 44 0ZM16 15 2 4v22Z" fill="currentColor"/><circle cx="49" cy="12" r="2" fill="#04202d"/></symbol>
+        <symbol id="jelly" viewBox="0 0 40 60"><path d="M4 26C4 6 36 6 36 26Z" fill="currentColor"/><path d="M10 28q-3 12 2 22M18 28q-3 14 2 28M26 28q3 12-2 24M32 28q3 10-1 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+        <symbol id="whale" viewBox="0 0 200 80"><path d="M10 40C20 8 120 0 170 30c10-16 22-20 28-22-2 16-8 24-14 30 6 8 12 18 14 28-12-4-20-12-28-16-40 30-140 26-160-10Z" fill="currentColor"/><circle cx="34" cy="34" r="2.6" fill="#04202d"/></symbol>
+        <symbol id="turtle" viewBox="0 0 80 50"><ellipse cx="38" cy="26" rx="22" ry="15" fill="currentColor"/><circle cx="66" cy="24" r="7" fill="currentColor"/><ellipse cx="50" cy="8" rx="11" ry="4" transform="rotate(25 50 8)" fill="currentColor"/><ellipse cx="50" cy="44" rx="11" ry="4" transform="rotate(-25 50 44)" fill="currentColor"/><ellipse cx="18" cy="38" rx="8" ry="3.5" transform="rotate(30 18 38)" fill="currentColor"/><circle cx="68" cy="22" r="1.4" fill="#04202d"/></symbol>
+        <symbol id="coral" viewBox="0 0 60 80"><path d="M30 80V40M30 58 14 40V20M30 48 46 30V12M14 40 6 30M46 30 54 20M14 28 22 18" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="fan" viewBox="0 0 80 70"><path d="M40 70 4 22Q40-16 76 22Z" fill="currentColor"/><path d="M40 68V16M40 60 18 26M40 60 62 26" stroke="#04202d" stroke-opacity=".3" stroke-width="2" fill="none"/></symbol>
+        <symbol id="tube" viewBox="0 0 60 70"><g fill="currentColor"><rect x="4" y="28" width="12" height="42" rx="6"/><rect x="24" y="6" width="13" height="64" rx="6.5"/><rect x="45" y="22" width="12" height="48" rx="6"/></g></symbol>
+        <symbol id="weed" viewBox="0 0 30 120"><path d="M15 120C0 90 30 70 15 40S25 10 15 0" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></symbol>
+        <symbol id="crab" viewBox="0 0 50 30"><ellipse cx="25" cy="18" rx="13" ry="8" fill="currentColor"/><path d="M12 14 5 6m0 0-3 6m3-6 6-1M38 14l7-8m0 0 3 6m-3-6-6-1M13 22 4 28M37 22l9 6M16 25l-5 5M34 25l5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/></symbol>
+    </svg>
+
+    <div class="beach-shoreline" aria-hidden="true">
+        <div class="sand"></div>
+        <div class="seashell shell-1"></div>
+        <div class="seashell shell-2"></div>
+        <div class="seashell shell-3"></div>
+        <div class="starfish"></div>
+        <div class="wave wave-back"></div>
+        <div class="wave wave-front"></div>
+        <div class="foam"></div>
+    </div>
+
+    <div class="ocean" id="ocean" aria-hidden="true"></div>
+    <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+
+    <header class="masthead">
+        <div class="masthead-meta">
+            <time id="live-datetime" data-date-locale="en-US" data-time-locale="en-GB" data-timezone="">Thursday, November 19, 2026</time>
+            <span id="edition-label"></span>
+            <span id="volume-label"></span>
+        </div>
+        <h1 class="newspaper-title" id="paper-title"></h1>
+    </header>
+
+    <main class="editorial-grid">
+        <aside class="left-column" id="left-articles" aria-label="More stories"></aside>
+        <article class="right-main-column" id="gaza-main"></article>
+    </main>
+
+    <footer class="seabed" id="seabed" aria-hidden="true"></footer>
+</body>
+</html>
